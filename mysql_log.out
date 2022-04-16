@@ -1,0 +1,29 @@
+2022-04-16 13:03:17,758 ERROR An Exception Occured:
+Traceback (most recent call last):
+  File "sql.py", line 109, in <module>
+    db = conn.connect(host = '127.0.0.1',user = 'root' ,passwd = "iitbhu" )
+NameError: name 'conn' is not defined
+2022-04-16 13:03:27,826 ERROR An Exception Occured:
+Traceback (most recent call last):
+  File "sql.py", line 109, in <module>
+    db = conn.connect(host = '127.0.0.1',user = 'root' ,passwd = "iitbhu" )
+NameError: name 'conn' is not defined
+2022-04-16 13:03:49,463 ERROR An Exception Occured:
+Traceback (most recent call last):
+  File "/home/iit/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 523, in cmd_query
+    self._cmysql.query(query,
+_mysql_connector.MySQLInterfaceError: Can't create database 'ineuronCourses'; database exists
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "sql.py", line 112, in <module>
+    cursor.execute("create database ineuronCourses")
+  File "/home/iit/.local/lib/python3.8/site-packages/mysql/connector/cursor_cext.py", line 269, in execute
+    result = self._cnx.cmd_query(stmt, raw=self._raw,
+  File "/home/iit/.local/lib/python3.8/site-packages/mysql/connector/connection_cext.py", line 528, in cmd_query
+    raise errors.get_mysql_exception(exc.errno, msg=exc.msg,
+mysql.connector.errors.DatabaseError: 1007 (HY000): Can't create database 'ineuronCourses'; database exists
+2022-04-16 13:03:49,981 INFO Table courseDetails has created Successfully database ineuronCourses.
+2022-04-16 13:03:49,982 INFO MySQL connection is closed
+2022-04-16 13:05:52,735 INFO MySQL connection is closed
