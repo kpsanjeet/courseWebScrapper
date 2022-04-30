@@ -53,7 +53,7 @@ def dataToInsert_mongodb(courseName:'str') -> 'dict':
     return details
 
 coursesName = course.coursesName()
-db_config = "mongodb+srv://test:test@cluster0.tjuqz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+db_config = "mongodb+srv://test:******@cluster0.tjuqz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 
 
 ##########%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%##############
