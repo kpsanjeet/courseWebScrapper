@@ -59,7 +59,7 @@ def insertData(dataToInsert:'list', table:'str' = 'courseDetails',  database:'st
         db = conn.connect(host = '127.0.0.1',
                           database = database,
                           user = 'root',
-                          password = 'iitbhu')
+                          password = '******')
 
         query = f"""INSERT INTO ineuronCourses.{table}
                                                      (
