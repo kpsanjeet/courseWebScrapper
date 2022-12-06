@@ -39,7 +39,7 @@ def raed_database():
             mysql_db = conn.connect(host='127.0.0.1',
                               database='ineuronCourses',
                               user='root',
-                              password='iitbhu')
+                              password='misc')
             cursor = mysql_db.cursor()
             cursor.execute(query)
             result = cursor.fetchall()
