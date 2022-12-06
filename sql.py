@@ -110,7 +110,7 @@ def dropTable(table: 'str' = 'test', database: 'str' = 'ineuronCourses'):
         db = conn.connect(host='127.0.0.1',
                           database=database,
                           user='root',
-                          password='iitbhu')
+                          password='misc')
         c = db.cursor()
         c.execute(f"drop table {table}")
         db.commit()
@@ -126,7 +126,7 @@ def dropTable(table: 'str' = 'test', database: 'str' = 'ineuronCourses'):
 
 # creating a database and a table
 try:
-    db = conn.connect(host = '127.0.0.1',user = 'root' ,passwd = "iitbhu" )
+    db = conn.connect(host = '127.0.0.1',user = 'root' ,passwd = "misc" )
     cursor = db.cursor()
     try:
         cursor.execute("create database ineuronCourses")
